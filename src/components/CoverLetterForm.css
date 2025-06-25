@@ -1,0 +1,75 @@
+.cover-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cover-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #3E8E41;
+  font-size: 0.95rem;
+}
+
+.cover-form input,
+.cover-form select,
+.cover-form textarea {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: vertical;
+  margin-top: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cover-form textarea {
+  min-height: 80px;
+}
+
+.cover-form button {
+  background-color: #3E8E41;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+.cover-form button:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ Mobile responsiveness */
+@media (max-width: 600px) {
+  .cover-form {
+    padding: 16px;
+  }
+
+  .cover-form label {
+    font-size: 0.9rem;
+  }
+
+  .cover-form input,
+  .cover-form select,
+  .cover-form textarea {
+    font-size: 0.95rem;
+  }
+
+  .cover-form button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
